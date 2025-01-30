@@ -509,7 +509,7 @@ a {
 
   .service-image {
     background-size: cover;
-    aspect-ratio: 5/6;
+    aspect-ratio: 6/5;
   }
 
   .service-content {
@@ -520,12 +520,6 @@ a {
 
   .service-title {
     text-align: left;
-  }
-
-  .service-image,
-  .graphic-design,
-  .photography {
-    max-height: 600px;
   }
 
   .graphic-design .service-content,
