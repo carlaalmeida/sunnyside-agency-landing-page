@@ -56,7 +56,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Fraunces", serif;
+  font-family: var(--ff-heading);
 }
 
 h1 {
@@ -198,7 +198,6 @@ a {
   z-index: -1;
   height: 100%;
   gap: var(--size-600);
-  /* justify-content: center; */
 }
 
 .header-title {
@@ -213,14 +212,17 @@ a {
 }
 
 .service-content {
-  padding: var(--size-500);
+  padding: 0 var(--size-500) var(--size-700);
   max-width: 75ch;
+  padding-top: 0;
 }
 
 .service-image {
-  min-height: 500px;
   width: 100%;
   background-position: top center;
+  aspect-ratio: 125/104;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .service-title {
@@ -279,7 +281,7 @@ a {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  min-height: 550px;
+  min-height: 600px;
   background-position: top;
   background-size: cover;
   position: relative;
@@ -436,7 +438,6 @@ a {
   }
   .header {
     background-image: url("images/desktop/image-header.jpg");
-    /* height: 80vh; */
   }
 
   .heading-2 {
@@ -508,12 +509,13 @@ a {
 
   .service-image {
     background-size: cover;
+    aspect-ratio: 5/6;
   }
 
   .service-content {
     text-align: left;
     margin: 0 auto;
-    padding: var(--size-800);
+    padding: var(--size-700);
   }
 
   .service-title {
@@ -523,7 +525,7 @@ a {
   .service-image,
   .graphic-design,
   .photography {
-    height: 650px;
+    max-height: 600px;
   }
 
   .graphic-design .service-content,
@@ -605,5 +607,6 @@ a {
   .transform .service-content,
   .stand-out .service-content {
     margin-block: var(--size-600);
+    padding-block: var(--size-500);
   }
 }
